@@ -60,11 +60,8 @@ kbd { font-family: inherit; background: var(--bg-soft); border: 1px solid var(--
 /* ---------- Header ---------- */
 .site-header { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
 .header-inner { display: flex; align-items: center; gap: 12px; min-height: 68px; }
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); margin-right: auto; }
-.logo img { width: 44px; height: 44px; }
-.logo-text { display: flex; flex-direction: column; line-height: 1.15; }
-.logo-text strong { color: var(--brand); font-size: 1.1rem; }
-.logo-text small { color: var(--muted); font-size: .8rem; }
+.logo { display: flex; align-items: center; margin-right: auto; padding: 6px 0; min-width: 0; }
+.logo img { display: block; height: 32px; width: auto; max-width: 100%; }
 .header-actions { display: flex; align-items: center; gap: 4px; }
 .icon-btn, .cart-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
@@ -313,7 +310,7 @@ input:focus, textarea:focus { border-color: var(--brand); outline: 3px solid #bc
 .site-footer h2 { font-size: 1.1rem; color: #fff; }
 .site-footer .contact-list .icon { color: #9cc0f0; }
 .footer-grid { display: grid; gap: 24px; }
-.footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: #fff; }
+.footer-brand img { display: block; height: 36px; width: auto; max-width: 100%; }
 .footer-links { list-style: none; padding: 0; margin: 0; }
 .footer-links a { display: inline-flex; min-height: 44px; align-items: center; }
 .legal { font-size: .85rem; color: #b8c4d6; margin-top: 24px; }
@@ -356,11 +353,12 @@ input:focus, textarea:focus { border-color: var(--brand); outline: 3px solid #bc
   .cart-text { display: inline; }
   .cart-btn { border: 2px solid var(--brand); color: var(--brand); font-weight: 700; padding: 0 14px; }
   .cart-btn .cart-count { position: static; }
-  .main-nav { display: block; }
-  .main-nav ul { display: flex; gap: 2px; padding: 0; }
-  .main-nav a { min-height: 48px; padding: 0 10px; font-size: .95rem; }
+  .header-inner { flex-wrap: wrap; min-height: 0; padding-top: 10px; }
+  .logo img { height: 40px; }
+  .main-nav { display: block; order: 3; width: 100%; border-top: 1px solid var(--line); margin-top: 10px; }
+  .main-nav ul { display: flex; gap: 4px; padding: 0; }
+  .main-nav a { min-height: 50px; padding: 0 14px; font-size: 1rem; }
   .main-nav a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--brand); border-radius: 0; }
-  .header-actions .icon-btn[href="#/buscar"] { display: none; }
   .options { grid-template-columns: repeat(4, 1fr); }
   .options--makes { grid-template-columns: repeat(6, 1fr); }
   .options--big { grid-template-columns: repeat(3, 1fr); }

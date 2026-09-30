@@ -14,7 +14,7 @@ js/data.js          Productos y compatibilidades (generado desde data/retenes-v1
 js/search.js        Búsqueda por vehículo, código y medida (sin DOM)
 js/cart.js          Carrito (localStorage) y armado del mensaje de WhatsApp
 js/app.js           Interfaz y navegación
-assets/             Logo provisorio y favicon
+assets/             Logo (negro y blanco) y favicon
 data/               Datos fuente de los 20 retenes (con link a la ficha original)
 docs/               Análisis y propuesta (fases 1 a 5)
 tests/              Tests de lógica (node) y de navegador (Playwright)
@@ -25,7 +25,6 @@ tests/              Tests de lógica (node) y de navegador (Playwright)
 - **Número de WhatsApp** → `whatsappNumber` en `js/config.js`. Mientras esté vacío,
   WhatsApp se abre con el mensaje listo y el usuario elige el contacto.
 - **Teléfono vigente** → `js/config.js` (se encontraron dos números distintos).
-- **Logo oficial** → reemplazar `assets/logo.svg` (y `favicon.svg`) manteniendo el nombre.
 - **Azul exacto de la marca** → variable `--brand` en `css/styles.css`.
 - **Precios y stock** → validar contra el sistema; hoy son de referencia.
 - **Fotos** → sin fotos verificadas; se muestra un dibujo generado con las medidas reales.
