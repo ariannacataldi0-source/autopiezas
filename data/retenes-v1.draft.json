@@ -1,0 +1,820 @@
+{
+  "_meta": {
+    "status": "BORRADOR — datos a validar contra el sitio/CSV de WooCommerce",
+    "capturedVia": "Contenido indexado por buscador web (acceso directo al sitio bloqueado en el entorno)",
+    "capturedAt": "2026-09-30",
+    "nullMeans": "Dato no disponible en la fuente. No se completa con suposiciones."
+  },
+  "products": [
+    {
+      "id": "sabo-5159",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5159",
+      "manufacturerCode": "05159BRAGF",
+      "application": "distribucion",
+      "detail": null,
+      "dimensions": {
+        "inner": 32,
+        "outer": 42,
+        "width": 7,
+        "raw": "32X42X7"
+      },
+      "price": {
+        "amount": 9023.73,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5159-sabo/"
+    },
+    {
+      "id": "sabo-7452",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "7452",
+      "manufacturerCode": "07452BRAGP",
+      "application": "caja-de-velocidad",
+      "detail": "Semieje derecho",
+      "dimensions": {
+        "inner": 50,
+        "outer": 65,
+        "width": 8,
+        "raw": "50X65X8"
+      },
+      "price": {
+        "amount": 8287.8,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-7452-sabo/"
+    },
+    {
+      "id": "sabo-7451",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "7451",
+      "manufacturerCode": "07451BRP",
+      "application": "caja-de-velocidad",
+      "detail": "Eje piloto-directa",
+      "dimensions": {
+        "inner": 24,
+        "outer": 38,
+        "width": 6,
+        "raw": "24X38X6"
+      },
+      "price": {
+        "amount": 9268.08,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-7451-sabo/"
+    },
+    {
+      "id": "sabo-2371",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "2371",
+      "manufacturerCode": "02371BAG",
+      "application": "caja-de-velocidad",
+      "detail": "Directa",
+      "dimensions": {
+        "inner": 21,
+        "outer": 32,
+        "width": 7.5,
+        "raw": "21X32X7,5"
+      },
+      "price": {
+        "amount": 6135.54,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-2371-sabo/"
+    },
+    {
+      "id": "sabo-5439",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5439",
+      "manufacturerCode": "05439BRAGF",
+      "application": "distribucion",
+      "detail": "Ecotec 1.8 16V",
+      "dimensions": {
+        "inner": 31.5,
+        "outer": 42,
+        "width": 7,
+        "raw": "31,5X42X7"
+      },
+      "price": {
+        "amount": 6826.29,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5439-sabo/"
+    },
+    {
+      "id": "sabo-5547",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5547",
+      "manufacturerCode": "05547BRAGF",
+      "application": "distribucion",
+      "detail": "Motor 1.6/1.8 16v E-TORQ",
+      "dimensions": {
+        "inner": 32,
+        "outer": 45,
+        "width": 6.5,
+        "raw": "32X45X6.5"
+      },
+      "price": {
+        "amount": 6135.54,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5547-sabo/"
+    },
+    {
+      "id": "sabo-5420",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5420",
+      "manufacturerCode": "05420BRGF",
+      "application": "bancada",
+      "detail": "Ancho 11 mm",
+      "dimensions": {
+        "inner": 90,
+        "outer": 110,
+        "width": 9,
+        "raw": "90X110X9"
+      },
+      "price": {
+        "amount": 21779.66,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5420-sabo/"
+    },
+    {
+      "id": "sabo-4247",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "4247",
+      "manufacturerCode": "04247BRGF",
+      "application": "arbol-de-levas",
+      "detail": null,
+      "dimensions": {
+        "inner": 36,
+        "outer": 50,
+        "width": 8,
+        "raw": "36X50X8"
+      },
+      "price": {
+        "amount": 8145.21,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-4247-sabo/"
+    },
+    {
+      "id": "sabo-5780",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5780",
+      "manufacturerCode": "05780BRGP",
+      "application": "arbol-de-levas",
+      "detail": "D4F/D4D 1.2 16v",
+      "dimensions": {
+        "inner": 28,
+        "outer": 47,
+        "width": 8,
+        "raw": "28X47X8"
+      },
+      "price": {
+        "amount": 5614.32,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5780-sabo/"
+    },
+    {
+      "id": "sabo-5658",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5658",
+      "manufacturerCode": "05658BRS",
+      "application": "arbol-de-levas",
+      "detail": "Motor 2 litros",
+      "dimensions": {
+        "inner": 35,
+        "outer": 47,
+        "width": 7,
+        "raw": "35X47X7"
+      },
+      "price": {
+        "amount": 7160.19,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5658-sabo/"
+    },
+    {
+      "id": "sabo-5167",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5167",
+      "manufacturerCode": "05167BRAGEF",
+      "application": "distribucion",
+      "detail": "Motor 1.3",
+      "dimensions": {
+        "inner": 36.8,
+        "outer": 52,
+        "width": 8,
+        "raw": "36.8X52X8"
+      },
+      "price": {
+        "amount": 11460.33,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5167-sabo/"
+    },
+    {
+      "id": "dbh-9888",
+      "category": "retenes",
+      "brand": "DBH",
+      "shortCode": "9888",
+      "manufacturerCode": "9888",
+      "application": "semieje",
+      "detail": "Derecho 4x4",
+      "dimensions": {
+        "inner": 44.45,
+        "outer": 66.57,
+        "width": 12,
+        "raw": "44,45X66,57X12"
+      },
+      "price": {
+        "amount": 15447.32,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-9888-dbh/"
+    },
+    {
+      "id": "sabo-7375",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "7375",
+      "manufacturerCode": "07375BY",
+      "application": "rueda-trasera",
+      "detail": "Interior F-4000",
+      "dimensions": {
+        "inner": 82.5,
+        "outer": 114.3,
+        "width": 12.7,
+        "raw": "82,5X114,3X12.7"
+      },
+      "price": {
+        "amount": 16254.32,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-7375-sabo/"
+    },
+    {
+      "id": "sabo-7552",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "7552",
+      "manufacturerCode": "07552BAGE",
+      "application": "rueda-trasera",
+      "detail": "1970 – 80",
+      "dimensions": {
+        "inner": 79,
+        "outer": 98.5,
+        "width": 11,
+        "raw": "79X98,5X11"
+      },
+      "price": {
+        "amount": 12440.61,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-7552-sabo/"
+    },
+    {
+      "id": "sabo-2153",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "2153",
+      "manufacturerCode": "02153BRG",
+      "application": "caja-de-velocidad",
+      "detail": "Salida I",
+      "dimensions": {
+        "inner": 29.4,
+        "outer": 42.8,
+        "width": 8,
+        "raw": "29,4X42,8X8"
+      },
+      "price": {
+        "amount": 4758.8,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-2153-sabo/"
+    },
+    {
+      "id": "sabo-8383",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "8383",
+      "manufacturerCode": "08383BRY",
+      "application": "rueda-trasera",
+      "detail": null,
+      "dimensions": {
+        "inner": 121.1,
+        "outer": 160.2,
+        "width": 30,
+        "raw": "121,1X160,2X30"
+      },
+      "price": {
+        "amount": 31146.79,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-8383-sabo/"
+    },
+    {
+      "id": "sabo-5214",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "5214",
+      "manufacturerCode": "05214GRAHF",
+      "application": "distribucion",
+      "detail": "OM 904/6",
+      "dimensions": {
+        "inner": 78,
+        "outer": 104,
+        "width": 11,
+        "raw": "78X104X11"
+      },
+      "price": {
+        "amount": 21940.39,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-5214-sabo/"
+    },
+    {
+      "id": "sabo-1924",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "1924",
+      "manufacturerCode": "01924BAEP",
+      "application": "guia-de-valvulas",
+      "detail": null,
+      "dimensions": {
+        "inner": 9.9,
+        "outer": 15,
+        "width": 10,
+        "raw": "9,9X15X10.0/14.0",
+        "widthAlt": 14
+      },
+      "price": {
+        "amount": 5940.99,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-1924-sabo/"
+    },
+    {
+      "id": "sabo-2235",
+      "category": "retenes",
+      "brand": "SABÓ",
+      "shortCode": "2235",
+      "manufacturerCode": "S02235",
+      "application": "distribucion",
+      "detail": null,
+      "dimensions": {
+        "inner": 80,
+        "outer": 100,
+        "width": 12,
+        "raw": "80X100X12"
+      },
+      "price": {
+        "amount": 3246.69,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-2235-sabo/"
+    },
+    {
+      "id": "dbh-8099",
+      "category": "retenes",
+      "brand": "DBH",
+      "shortCode": "8099",
+      "manufacturerCode": "DBH8099",
+      "application": "distribucion",
+      "detail": "Motor 913",
+      "dimensions": {
+        "inner": 65,
+        "outer": 85,
+        "width": 12,
+        "raw": "65X85X12"
+      },
+      "price": {
+        "amount": 23168.17,
+        "currency": "ARS",
+        "isReference": true,
+        "verified": false,
+        "note": "Tomado del índice del buscador; fecha desconocida. Validar antes de publicar."
+      },
+      "stock": null,
+      "image": null,
+      "sourceUrl": "https://autopiezaswarnes.com.ar/product/reten-8099-dbh/"
+    }
+  ],
+  "fitments": [
+    {
+      "productId": "sabo-5159",
+      "vehicleMake": "volkswagen",
+      "modelGroupLabel": "GOL-GACEL-SENDA-SAVEIRO",
+      "vehicleModels": [
+        "Gol",
+        "Gacel",
+        "Senda",
+        "Saveiro"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": null
+    },
+    {
+      "productId": "sabo-7452",
+      "vehicleMake": "volkswagen",
+      "modelGroupLabel": "GOL TREND-GOLF-BORA-POLO-FOX-SURAN-AUDI3",
+      "vehicleModels": [
+        "Gol Trend",
+        "Golf",
+        "Bora",
+        "Polo",
+        "Fox",
+        "Suran",
+        "Audi A3"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": "Semieje derecho"
+    },
+    {
+      "productId": "sabo-7451",
+      "vehicleMake": "volkswagen",
+      "modelGroupLabel": "GOL TREND-GOLF-BORA-POLO-FOX-SURAN-AUDI3",
+      "vehicleModels": [
+        "Gol Trend",
+        "Golf",
+        "Bora",
+        "Polo",
+        "Fox",
+        "Suran",
+        "Audi A3"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": "Eje piloto-directa"
+    },
+    {
+      "productId": "sabo-2371",
+      "vehicleMake": "chevrolet",
+      "modelGroupLabel": "CORSA",
+      "vehicleModels": [
+        "Corsa"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": "Directa"
+    },
+    {
+      "productId": "sabo-5439",
+      "vehicleMake": "chevrolet",
+      "modelGroupLabel": "VECTRA-ASTRA-OMEGA-ZAFIRE-CRUZE-TRACKER",
+      "vehicleModels": [
+        "Vectra",
+        "Astra",
+        "Omega",
+        "Zafira",
+        "Cruze",
+        "Tracker"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": "Ecotec 1.8 16V",
+      "position": null
+    },
+    {
+      "productId": "sabo-5547",
+      "vehicleMake": "fiat",
+      "modelGroupLabel": "PALIO-SIENA",
+      "vehicleModels": [
+        "Palio",
+        "Siena"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": "Motor 1.6/1.8 16v E-TORQ",
+      "position": null
+    },
+    {
+      "productId": "sabo-5420",
+      "vehicleMake": "peugeot-citroen",
+      "modelGroupLabel": "205-206-207-306-307-405-BERLINGO-XANTIA-XSARA-C3",
+      "vehicleModels": [
+        "205",
+        "206",
+        "207",
+        "306",
+        "307",
+        "405",
+        "Berlingo",
+        "Xantia",
+        "Xsara",
+        "C3"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": null
+    },
+    {
+      "productId": "sabo-4247",
+      "vehicleMake": "peugeot-citroen",
+      "modelGroupLabel": "205-206-207-306-307-405-BERLINGO-XANTIA-XSARA-C3",
+      "vehicleModels": [
+        "205",
+        "206",
+        "207",
+        "306",
+        "307",
+        "405",
+        "Berlingo",
+        "Xantia",
+        "Xsara",
+        "C3"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": null
+    },
+    {
+      "productId": "sabo-5780",
+      "vehicleMake": "renault",
+      "modelGroupLabel": "CLIO-EXPRESS-MEGANE-LAGUNA-MASTER",
+      "vehicleModels": [
+        "Clio",
+        "Express",
+        "Megane",
+        "Laguna",
+        "Master"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": "D4F/D4D 1.2 16v",
+      "position": null
+    },
+    {
+      "productId": "sabo-5658",
+      "vehicleMake": "renault",
+      "modelGroupLabel": "R18-FUEGO",
+      "vehicleModels": [
+        "R18",
+        "Fuego"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": "Motor 2 litros",
+      "position": null
+    },
+    {
+      "productId": "sabo-5167",
+      "vehicleMake": "ford",
+      "modelGroupLabel": "FIESTA-COURIER-KA-ZETEC-FOCUS-ECOSPORT",
+      "vehicleModels": [
+        "Fiesta",
+        "Courier",
+        "Ka",
+        "Zetec",
+        "Focus",
+        "EcoSport"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": "Motor 1.3",
+      "position": null
+    },
+    {
+      "productId": "dbh-9888",
+      "vehicleMake": "ford",
+      "modelGroupLabel": "RANGER",
+      "vehicleModels": [
+        "Ranger"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": "Derecho 4x4"
+    },
+    {
+      "productId": "sabo-7375",
+      "vehicleMake": "ford",
+      "modelGroupLabel": "F100-F150-F1000-F4000 DIE",
+      "vehicleModels": [
+        "F-100",
+        "F-150",
+        "F-1000",
+        "F-4000"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": "Interior F-4000"
+    },
+    {
+      "productId": "sabo-7552",
+      "vehicleMake": "ford",
+      "modelGroupLabel": "F250-2500-F350-3500",
+      "vehicleModels": [
+        "F-250",
+        "F-2500",
+        "F-350",
+        "F-3500"
+      ],
+      "yearFrom": 1970,
+      "yearTo": 1980,
+      "engine": null,
+      "position": null
+    },
+    {
+      "productId": "sabo-2153",
+      "vehicleMake": "dodge",
+      "modelGroupLabel": "VALIANT",
+      "vehicleModels": [
+        "Valiant"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": "Salida I"
+    },
+    {
+      "productId": "sabo-8383",
+      "vehicleMake": "mercedes-benz",
+      "modelGroupLabel": "O400-O500-1218-AXOR-ACCELO",
+      "vehicleModels": [
+        "O400",
+        "O500",
+        "1218",
+        "Axor",
+        "Accelo"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": null
+    },
+    {
+      "productId": "sabo-5214",
+      "vehicleMake": "mercedes-benz",
+      "modelGroupLabel": "L700-L800-900-OM904/6",
+      "vehicleModels": [
+        "L700",
+        "L800",
+        "900"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": "OM 904/6",
+      "position": null
+    },
+    {
+      "productId": "sabo-1924",
+      "vehicleMake": "mercedes-benz",
+      "modelGroupLabel": "L1112-L1114-O140-O170-OC1214",
+      "vehicleModels": [
+        "L1112",
+        "L1114",
+        "O140",
+        "O170",
+        "OC1214"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": null
+    },
+    {
+      "productId": "sabo-2235",
+      "vehicleMake": "scania",
+      "modelGroupLabel": "L111-S111-T111",
+      "vehicleModels": [
+        "L111",
+        "S111",
+        "T111"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": null,
+      "position": null
+    },
+    {
+      "productId": "dbh-8099",
+      "vehicleMake": "deutz",
+      "modelGroupLabel": "DEUTZ",
+      "vehicleModels": [
+        "Deutz"
+      ],
+      "yearFrom": null,
+      "yearTo": null,
+      "engine": "Motor 913",
+      "position": null
+    }
+  ]
+}
