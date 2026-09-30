@@ -17,8 +17,9 @@ const AW = load();
 const { data, config: cfg, search: S } = AW;
 const ids = (r) => Array.from(r.items, (p) => p.shortCode); // arrays del contexto vm -> realm actual
 
-test("datos: 20 productos, cada uno con al menos una compatibilidad", () => {
-  assert.strictEqual(data.products.length, 20);
+test("datos: 60 productos, cada uno con al menos una compatibilidad", () => {
+  assert.strictEqual(data.products.length, 60);
+  assert.strictEqual(new Set(data.products.map((p) => p.id)).size, 60);
   for (const p of data.products) assert.ok(S.fitmentsFor(data, p.id).length > 0, p.id);
   for (const p of data.products) assert.ok(cfg.applications[p.application], p.application);
 });
@@ -80,6 +81,18 @@ test("nunca devuelve más de 20: con más resultados pide un filtro", () => {
   assert.ok(filtered.items.length <= 20);
 });
 
+test("con el catálogo real, una búsqueda amplia pide un filtro (más de 20)", () => {
+  const r = S.directSearch(data, cfg, "sabo");
+  assert.strictEqual(r.status, "too-many");
+  assert.ok(r.total > 20);
+  assert.strictEqual(r.items.length, 0);
+  const f = S.directSearch(data, cfg, "sabo", { make: "ford" });
+  assert.ok(f.total > 0);
+  const g = S.directSearch(data, cfg, "sabo", { application: "bancada" });
+  assert.strictEqual(g.status, "ok");
+  assert.ok(g.items.length <= 20);
+});
+
 test("filtros dependientes por vehículo", () => {
   let st = S.vehicleState(data, cfg, {});
   assert.strictEqual(st.step, "make");
@@ -98,7 +111,7 @@ test("filtros dependientes por vehículo", () => {
 
   st = S.vehicleState(data, cfg, { make: "peugeot", model: "206" });
   assert.strictEqual(st.step, "app");
-  assert.deepStrictEqual(Array.from(st.apps, (a) => a.key).sort(), ["arbol-de-levas", "bancada"]);
+  assert.deepStrictEqual(Array.from(st.apps, (a) => a.key).sort(), ["arbol-de-levas", "bancada", "guia-de-valvulas"]);
   st = S.vehicleState(data, cfg, { make: "peugeot", model: "206", zone: "motor", app: "bancada" });
   assert.deepStrictEqual(ids(st.results), ["5420"]);
 
@@ -123,6 +136,21 @@ test("carrito: agregar, modificar, eliminar, subtotal", () => {
   assert.strictEqual(cart.count(), 2);
   const reloaded = AW.createCart(storage);
   assert.strictEqual(reloaded.get("sabo-5159"), 2);
+});
+
+test("productos con precio a consultar y sin código de fabricante", () => {
+  const mem = {}; const storage = { getItem: (k) => mem[k] || null, setItem: (k, v) => { mem[k] = v; } };
+  const cart = AW.createCart(storage);
+  cart.add("sabo-5159", 1);
+  cart.add("sabo-8471", 2); // precio contradictorio entre fuentes -> null
+  const sum = AW.order.summarize(data, cart);
+  assert.strictEqual(sum.pending, 1);
+  assert.strictEqual(sum.totalCents, 902373);
+  const msg = AW.order.buildMessage(data, cfg, sum, {});
+  assert.match(msg, /2 x precio a consultar/);
+  assert.match(msg, /sin incluir 1 producto con precio a consultar/);
+  assert.strictEqual(S.codeLabel(S.getProduct(data, "sabo-2972")), "SABÓ 2972");
+  assert.deepStrictEqual(ids(S.directSearch(data, cfg, "taunus")), ["2972"]);
 });
 
 test("mensaje de WhatsApp con productos reales del carrito", () => {

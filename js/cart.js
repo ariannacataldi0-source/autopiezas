@@ -57,11 +57,13 @@
     cart.entries().forEach(function (e) {
       var p = AW.search.getProduct(data, e.id);
       if (!p) return;
-      var unitCents = Math.round(p.price * 100);
-      lines.push({ product: p, qty: e.qty, unitCents: unitCents, subtotalCents: unitCents * e.qty });
+      // price null = precio a consultar: no suma al total.
+      var unitCents = p.price == null ? null : Math.round(p.price * 100);
+      lines.push({ product: p, qty: e.qty, unitCents: unitCents, subtotalCents: unitCents == null ? null : unitCents * e.qty });
     });
-    var totalCents = lines.reduce(function (s, l) { return s + l.subtotalCents; }, 0);
-    return { lines: lines, totalCents: totalCents };
+    var totalCents = lines.reduce(function (s, l) { return s + (l.subtotalCents || 0); }, 0);
+    var pending = lines.filter(function (l) { return l.unitCents == null; }).length;
+    return { lines: lines, totalCents: totalCents, pending: pending };
   }
 
   function buildOrderMessage(data, cfg, summary, extra) {
@@ -70,13 +72,14 @@
     var out = ["Hola, quiero realizar el siguiente pedido:", ""];
     summary.lines.forEach(function (l) {
       var p = l.product;
-      var code = p.brand + " " + p.shortCode + (p.manufacturerCode && p.manufacturerCode !== p.shortCode ? " (" + p.manufacturerCode + ")" : "");
-      out.push("• Retén " + code + " — " + AW.search.appLabel(cfg, p.application) + " — " +
+      out.push("• Retén " + AW.search.codeLabel(p) + " — " + AW.search.appLabel(cfg, p.application) + " — " +
         AW.search.vehicleSummary(data, p.id, 3) + " — " + AW.util.formatDims(p.dimensions).replace(/ /g, ""));
-      out.push("  " + l.qty + " x " + fp(l.unitCents / 100) + " = " + fp(l.subtotalCents / 100));
+      out.push(l.unitCents == null ? "  " + l.qty + " x precio a consultar" :
+        "  " + l.qty + " x " + fp(l.unitCents / 100) + " = " + fp(l.subtotalCents / 100));
     });
     out.push("");
-    out.push("Total estimado: " + fp(summary.totalCents / 100));
+    out.push("Total estimado: " + fp(summary.totalCents / 100) +
+      (summary.pending ? " (sin incluir " + (summary.pending === 1 ? "1 producto" : summary.pending + " productos") + " con precio a consultar)" : ""));
     out.push("(Precios de referencia de la web)");
     if (extra.name || extra.city) out.push("");
     if (extra.name) out.push("Nombre: " + extra.name);

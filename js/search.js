@@ -95,6 +95,12 @@
     return e.length ? e[0] : null;
   }
 
+  /* "SABÓ 5159 (05159BRAGF)" — el código de fabricante solo si existe y es distinto. */
+  function codeLabel(p) {
+    var mc = p.manufacturerCode;
+    return p.brand + " " + p.shortCode + (mc && mc !== p.shortCode ? " (" + mc + ")" : "");
+  }
+
   function productTitle(cfg, p) {
     return "Retén de " + appLabel(cfg, p.application).toLowerCase();
   }
@@ -318,6 +324,7 @@
     yearsLabel: yearsLabel,
     engineLabel: engineLabel,
     productTitle: productTitle,
+    codeLabel: codeLabel,
     isCompatible: isCompatible
   };
 })(window.AW = window.AW || {});

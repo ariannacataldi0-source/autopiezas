@@ -65,6 +65,20 @@ async function run(viewport, label) {
   await page.click("button[value=dims]");
   assert.ok(await page.isVisible("[data-dims-error]"));
 
+  // Más de 20 resultados → pide filtro; al elegir uno se muestran ≤ 20
+  await page.goto(BASE + "#/buscar?q=sabo");
+  await page.waitForSelector(".alert:has-text('Agregá un filtro')");
+  assert.strictEqual(await page.$$eval(".product-card", (c) => c.length), 0);
+  await shot("demasiados");
+  await page.click(".option:has-text('Bancada')");
+  await page.waitForSelector("h1:has-text('Encontramos')");
+  const n = await page.$$eval(".product-card", (c) => c.length);
+  assert.ok(n > 0 && n <= 20, "resultados filtrados: " + n);
+
+  // Producto con precio a consultar
+  await page.goto(BASE + "#/producto/sabo-8471");
+  await page.waitForSelector(".price--ask");
+
   // Sin resultados → bloque de ayuda
   await page.goto(BASE + "#/buscar?q=zzzz");
   await page.waitForSelector("text=¿No encontrás tu retén?");

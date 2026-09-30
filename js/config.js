@@ -25,7 +25,8 @@ window.AW.config = {
   zones: [
     { key: "motor", label: "Motor", hint: "Distribución, bancada, árbol de levas, válvulas" },
     { key: "transmision", label: "Caja y transmisión", hint: "Caja de cambios, semiejes, diferencial" },
-    { key: "ruedas", label: "Ruedas", hint: "Maza de rueda delantera o trasera" }
+    { key: "ruedas", label: "Ruedas", hint: "Maza de rueda delantera o trasera" },
+    { key: "direccion", label: "Dirección", hint: "Caja de dirección" }
   ],
 
   applications: {
@@ -33,10 +34,16 @@ window.AW.config = {
       explanation: "Retenes de la zona de distribución del motor, donde van la correa o cadena de distribución." },
     "bancada": { zone: "motor", label: "Bancada",
       explanation: "Retén trasero del cigüeñal, del lado de la caja de cambios y el embrague." },
+    "distribucion-y-levas": { zone: "motor", label: "Distribución y árbol de levas",
+      explanation: "Retén que el catálogo indica para la distribución y el árbol de levas del motor." },
     "arbol-de-levas": { zone: "motor", label: "Árbol de levas",
       explanation: "Retén en el extremo del árbol de levas, en la parte superior del motor." },
     "guia-de-valvulas": { zone: "motor", label: "Guía de válvulas",
       explanation: "Retenes chicos que van sobre cada válvula, en la tapa de cilindros." },
+    "distribuidor": { zone: "motor", label: "Distribuidor",
+      explanation: "Retén del distribuidor de encendido, en motores nafteros que lo tienen." },
+    "bomba-inyectora": { zone: "motor", label: "Bomba inyectora",
+      explanation: "Retén de la bomba inyectora, en motores diésel." },
     "caja-de-velocidad": { zone: "transmision", label: "Caja de velocidad",
       explanation: "Retenes de la caja de cambios: ejes de entrada, salida y semiejes." },
     "caja-de-transferencia": { zone: "transmision", label: "Caja de transferencia",
@@ -45,9 +52,13 @@ window.AW.config = {
       explanation: "Donde el semieje sale hacia la rueda." },
     "pinon": { zone: "transmision", label: "Piñón de diferencial",
       explanation: "Retén del piñón del diferencial, donde entra el cardán." },
+    "brida-trasera": { zone: "transmision", label: "Brida trasera",
+      explanation: "Retén de la brida trasera de la transmisión." },
     "rueda-delantera": { zone: "ruedas", label: "Rueda delantera",
       explanation: "Retén de la maza de la rueda delantera." },
     "rueda-trasera": { zone: "ruedas", label: "Rueda trasera",
-      explanation: "Retén de la maza de la rueda trasera." }
+      explanation: "Retén de la maza de la rueda trasera." },
+    "direccion": { zone: "direccion", label: "Dirección",
+      explanation: "Retenes de la caja de dirección." }
   }
 };

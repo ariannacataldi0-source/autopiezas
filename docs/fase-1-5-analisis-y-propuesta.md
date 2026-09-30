@@ -456,7 +456,7 @@ Criterios: que existan hoy en el catálogo, que sus datos fueran **consistentes*
 índice, variedad de marcas de vehículo (autos, utilitarios, pesados) y de aplicaciones,
 y priorizar autos populares.
 
-Datos completos con fuente por producto: [`data/retenes-v1.draft.json`](../data/retenes-v1.draft.json).
+Datos completos con fuente por producto: [`data/retenes.json`](../data/retenes.json) (hoy con 60 retenes).
 
 | # | Retén | Marca | Cód. fabricante | Vehículo (grupo Warnes) | Aplicación | Detalle | Medidas | Precio ref.* |
 |---|---|---|---|---|---|---|---|---|

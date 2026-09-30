@@ -48,11 +48,12 @@
       pin: '<path d="M12 21s-6.5-6.2-6.5-11A6.5 6.5 0 0 1 18.5 10c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
       phone: '<path d="M5 4h4l1.5 4.5-2.3 1.4a11 11 0 0 0 5.9 5.9l1.4-2.3L20 15v4a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4z"/>',
       mail: '<rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/>',
-      clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>'
+      clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
+      steering: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2"/><path d="M3.8 10.5h6.3M13.9 10.5h6.3M12 14v6.5"/>'
     };
     return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + (paths[name] || "") + "</svg>";
   }
-  var ZONE_ICON = { motor: "engine", transmision: "gear", ruedas: "wheel" };
+  var ZONE_ICON = { motor: "engine", transmision: "gear", ruedas: "wheel", direccion: "steering" };
 
   /* Dibujo técnico generado a partir de las medidas reales (no es una foto). */
   function dimensionDrawing(p, large) {
@@ -80,6 +81,14 @@
     return dimensionDrawing(p, large);
   }
 
+  function priceHtml(p, large) {
+    if (p.price == null) {
+      return '<p class="price price--ask' + (large ? " price--lg" : "") + '">Precio a consultar</p>';
+    }
+    return '<p class="price' + (large ? " price--lg" : "") + '">' + esc(U.formatPrice(p.price)) +
+      (large ? "" : ' <span class="price-note">precio de referencia</span>') + "</p>";
+  }
+
   function addButton(p) {
     var inCart = cart.get(p.id);
     return '<button type="button" class="btn btn-primary" data-add="' + esc(p.id) + '">' + icon("cart") +
@@ -104,7 +113,7 @@
       (engine ? "<div><dt>Motor</dt><dd>" + esc(engine) + "</dd></div>" : "") +
       "<div><dt>Marca</dt><dd>" + esc(p.brand) + " · Cód. " + esc(p.shortCode) + "</dd></div>" +
       "</dl>" +
-      '<p class="price">' + esc(U.formatPrice(p.price)) + ' <span class="price-note">precio de referencia</span></p>' +
+      priceHtml(p) +
       '<p class="stock">Stock: consultar</p>' +
       '<div class="card-actions"><a class="btn btn-secondary" href="#/producto/' + esc(p.id) + '">Ver producto</a>' + addButton(p) + "</div>" +
       "</div></article>";
@@ -252,7 +261,7 @@
         }).join("") + "</div>";
     } else if (st.step === "app") {
       var zl = (cfg.zones.filter(function (z) { return z.key === st.zone; })[0] || {}).label;
-      q = "¿En qué parte " + (st.zone === "ruedas" ? "de las ruedas" : st.zone === "motor" ? "del motor" : "de la transmisión") + "?";
+      q = "¿En qué parte " + ({ ruedas: "de las ruedas", motor: "del motor", direccion: "de la dirección" }[st.zone] || "de la transmisión") + "?";
       body = '<p class="step-help">' + esc(zl) + ": elegí dónde va el retén.</p>" +
         '<div class="options options--big">' + st.apps.map(function (a) {
           return '<a class="option" href="#/vehiculo' + qs({ marca: sel.make, modelo: sel.model, zona: st.zone, parte: a.key }) + '"><span class="option-label">' + esc(a.label) +
@@ -352,7 +361,15 @@
         content = productGrid(res.items) + helpBlock("¿No es el que buscabas?", q ? "Busqué: " + q + "." : "");
       } else if (res.status === "too-many") {
         heading = "Encontramos " + res.total + " retenes";
-        content = '<p class="alert">No encontramos una coincidencia suficientemente específica. Agregá un filtro para encontrar el retén correcto.</p>';
+        var base = {}; params.forEach(function (v, k) { base[k] = v; });
+        var suggest = res.facets.application.filter(function (f) { return f.key !== filters.application; });
+        content = '<p class="alert">No encontramos una coincidencia suficientemente específica. Agregá un filtro para encontrar el retén correcto.</p>' +
+          (suggest.length ? "<h2>¿Dónde va el retén?</h2>" + '<div class="options">' + suggest.map(function (f) {
+            var p = Object.assign({}, base, { parte: f.key });
+            return '<a class="option" href="#/buscar' + qs(p) + '"><span class="option-label">' + esc(f.label) +
+              '</span><span class="option-count">' + plural(f.count, "retén", "retenes") + "</span></a>";
+          }).join("") + "</div>" : "") +
+          '<p class="step-alt">O buscá por tu vehículo: <a href="#/vehiculo">elegí marca y modelo</a>.</p>';
       } else {
         heading = "No encontramos retenes" + (q ? " para “" + q + "”" : "");
         content = (res.similar.length ?
@@ -377,7 +394,7 @@
     var fits = S.fitmentsFor(data, p.id);
     var years = S.yearsLabel(data, p.id);
     var engine = S.engineLabel(data, p.id);
-    var code = p.brand + " " + p.shortCode + (p.manufacturerCode !== p.shortCode ? " (" + p.manufacturerCode + ")" : "");
+    var code = S.codeLabel(p);
     var consult = "Hola, quería consultar por el Retén " + code + " — " + S.appLabel(cfg, p.application) + " — " + U.formatDims(p.dimensions).replace(/ /g, " ") + ".";
     var compat = "";
     if (v) {
@@ -397,8 +414,9 @@
         '<p class="product-sub">' + esc(p.brand) + " · Código " + esc(p.shortCode) + "</p>" +
         '<p class="product-vehicles">' + esc(S.vehicleSummary(data, p.id)) + "</p>" +
         '<p class="product-dims">' + esc(U.formatDims(p.dimensions)) + "</p>" +
-        '<p class="price price--lg">' + esc(U.formatPrice(p.price)) + "</p>" +
-        '<p class="price-note">Precio de referencia. El precio final y los descuentos se confirman por WhatsApp.</p>' +
+        priceHtml(p, true) +
+        '<p class="price-note">' + (p.price == null ? esc(p.priceNote || "Consultanos el precio por WhatsApp.") :
+          "Precio de referencia. El precio final y los descuentos se confirman por WhatsApp.") + "</p>" +
         '<p class="stock">Stock: consultar</p>' +
         '<div class="buy">' +
         '<div class="qty" role="group" aria-label="Cantidad">' +
@@ -415,7 +433,7 @@
         "<div><dt>Producto</dt><dd>" + esc(S.productTitle(cfg, p)) + "</dd></div>" +
         "<div><dt>Marca</dt><dd>" + esc(p.brand) + "</dd></div>" +
         "<div><dt>Código</dt><dd>" + esc(p.shortCode) + "</dd></div>" +
-        "<div><dt>Código de fabricante</dt><dd>" + esc(p.manufacturerCode) + "</dd></div>" +
+        "<div><dt>Código de fabricante</dt><dd>" + esc(p.manufacturerCode || "No disponible") + "</dd></div>" +
         "<div><dt>Parte del vehículo</dt><dd>" + esc(S.appLabel(cfg, p.application)) + "</dd></div>" +
         "<div><dt>Detalle</dt><dd>" + esc(p.detail || "No disponible") + "</dd></div>" +
         "<div><dt>Motor</dt><dd>" + esc(engine || "No especificado") + "</dd></div>" +
@@ -442,7 +460,8 @@
 
         '<section class="panel"><h2>Consultas</h2><p>Si tenés dudas sobre este retén, escribinos con el código <strong>' + esc(p.shortCode) + "</strong> y los datos de tu vehículo.</p>" +
         waLink(consult) +
-        '<p class="muted small">Ficha en el catálogo actual: <a href="' + esc(p.sourceUrl) + '" target="_blank" rel="noopener">' + esc(p.sourceUrl.replace("https://", "")) + "</a></p></section>" +
+        '<p class="muted small">Ficha en el catálogo actual: <a href="' + esc(p.sourceUrl) + '" target="_blank" rel="noopener">' + esc(p.sourceUrl.replace("https://", "")) + "</a>" +
+        (p.sourceNote ? " (" + esc(p.sourceNote) + ")" : "") + "</p></section>" +
         "</div></div>"
     };
   }
@@ -464,16 +483,17 @@
             '<div class="cart-desc"><a href="#/producto/' + esc(p.id) + '"><strong>' + esc(S.productTitle(cfg, p)) + "</strong></a>" +
             "<span>" + esc(p.brand) + " · Código " + esc(p.shortCode) + " · " + esc(U.formatDims(p.dimensions)) + "</span>" +
             "<span>" + esc(S.vehicleSummary(data, p.id, 3)) + "</span>" +
-            "<span>Precio unitario: " + esc(U.formatPrice(l.unitCents / 100)) + "</span></div>" +
+            "<span>Precio unitario: " + (l.unitCents == null ? "a consultar" : esc(U.formatPrice(l.unitCents / 100))) + "</span></div>" +
             '<div class="cart-qty"><div class="qty" role="group" aria-label="Cantidad de ' + esc(p.brand + " " + p.shortCode) + '">' +
             '<button type="button" class="qty-btn" data-cart-step="-1" data-id="' + esc(p.id) + '" aria-label="Restar uno">−</button>' +
             '<input type="number" inputmode="numeric" min="1" max="' + cart.MAX_QTY + '" value="' + l.qty + '" data-cart-qty="' + esc(p.id) + '" aria-label="Cantidad">' +
             '<button type="button" class="qty-btn" data-cart-step="1" data-id="' + esc(p.id) + '" aria-label="Sumar uno">+</button></div>' +
             '<button type="button" class="link-btn" data-remove="' + esc(p.id) + '">' + icon("trash") + "Eliminar</button></div>" +
-            '<div class="cart-sub"><span class="label">Subtotal</span> <strong>' + esc(U.formatPrice(l.subtotalCents / 100)) + "</strong></div>" +
+            '<div class="cart-sub"><span class="label">Subtotal</span> <strong>' + (l.subtotalCents == null ? "A consultar" : esc(U.formatPrice(l.subtotalCents / 100))) + "</strong></div>" +
             "</li>";
         }).join("") + "</ul>" +
         '<div class="cart-total"><p><span>Total estimado</span> <strong data-total>' + esc(U.formatPrice(sum.totalCents / 100)) + "</strong></p>" +
+        (sum.pending ? '<p class="price-note"><strong>No incluye ' + plural(sum.pending, "producto", "productos") + " con precio a consultar.</strong></p>" : "") +
         '<p class="price-note">Precios de referencia. El precio final y los descuentos se confirman por WhatsApp.</p>' +
         '<div class="cart-actions"><a class="btn btn-secondary" href="#/buscar">Seguir buscando retenes</a>' +
         '<a class="btn btn-whatsapp btn-lg" href="#/pedido">' + icon("whatsapp") + "Finalizar pedido</a></div></div>" +

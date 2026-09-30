@@ -1,8 +1,76 @@
-/* ARCHIVO GENERADO: no editar a mano. Fuente: data/retenes.json
-   Regenerar con: python3 tools/build-data.py
-   null = dato no disponible. Precios de referencia: validar antes de publicar. */
-window.AW = window.AW || {};
-window.AW.data = {
+{
+ "_meta": {
+  "status": "Datos relevados del catálogo de autopiezaswarnes.com.ar vía buscador web. Validar precios y stock antes de publicar.",
+  "capturedVia": "Contenido indexado por buscador web (acceso directo al sitio bloqueado en el entorno)",
+  "capturedAt": "2026-09-30",
+  "nullMeans": "Dato no disponible en la fuente. No se completa con suposiciones."
+ },
+ "makes": [
+  {
+   "key": "volkswagen",
+   "label": "Volkswagen"
+  },
+  {
+   "key": "audi",
+   "label": "Audi"
+  },
+  {
+   "key": "chevrolet",
+   "label": "Chevrolet"
+  },
+  {
+   "key": "fiat",
+   "label": "Fiat"
+  },
+  {
+   "key": "peugeot",
+   "label": "Peugeot"
+  },
+  {
+   "key": "citroen",
+   "label": "Citroën"
+  },
+  {
+   "key": "renault",
+   "label": "Renault"
+  },
+  {
+   "key": "ford",
+   "label": "Ford"
+  },
+  {
+   "key": "dodge",
+   "label": "Dodge"
+  },
+  {
+   "key": "mercedes-benz",
+   "label": "Mercedes-Benz"
+  },
+  {
+   "key": "scania",
+   "label": "Scania"
+  },
+  {
+   "key": "deutz",
+   "label": "Deutz"
+  },
+  {
+   "key": "isuzu",
+   "label": "Isuzu"
+  },
+  {
+   "key": "borgward",
+   "label": "Borgward"
+  },
+  {
+   "key": "el-detalle",
+   "label": "El Detalle"
+  },
+  {
+   "key": "siam-di-tella",
+   "label": "Siam Di Tella"
+  }
+ ],
  "products": [
   {
    "id": "sabo-5159",
@@ -1161,10 +1229,10 @@ window.AW.data = {
    "productId": "sabo-5159",
    "make": "volkswagen",
    "models": [
-    "gol",
-    "gacel",
-    "senda",
-    "saveiro"
+    "Gol",
+    "Gacel",
+    "Senda",
+    "Saveiro"
    ],
    "groupLabel": "GOL-GACEL-SENDA-SAVEIRO",
    "yearFrom": null,
@@ -1176,12 +1244,12 @@ window.AW.data = {
    "productId": "sabo-7452",
    "make": "volkswagen",
    "models": [
-    "gol-trend",
-    "golf",
-    "bora",
-    "polo",
-    "fox",
-    "suran"
+    "Gol Trend",
+    "Golf",
+    "Bora",
+    "Polo",
+    "Fox",
+    "Suran"
    ],
    "groupLabel": "GOL TREND-GOLF-BORA-POLO-FOX-SURAN-AUDI3",
    "yearFrom": null,
@@ -1193,7 +1261,7 @@ window.AW.data = {
    "productId": "sabo-7452",
    "make": "audi",
    "models": [
-    "a3"
+    "A3"
    ],
    "groupLabel": "GOL TREND-GOLF-BORA-POLO-FOX-SURAN-AUDI3",
    "yearFrom": null,
@@ -1205,12 +1273,12 @@ window.AW.data = {
    "productId": "sabo-7451",
    "make": "volkswagen",
    "models": [
-    "gol-trend",
-    "golf",
-    "bora",
-    "polo",
-    "fox",
-    "suran"
+    "Gol Trend",
+    "Golf",
+    "Bora",
+    "Polo",
+    "Fox",
+    "Suran"
    ],
    "groupLabel": "GOL TREND-GOLF-BORA-POLO-FOX-SURAN-AUDI3",
    "yearFrom": null,
@@ -1222,7 +1290,7 @@ window.AW.data = {
    "productId": "sabo-7451",
    "make": "audi",
    "models": [
-    "a3"
+    "A3"
    ],
    "groupLabel": "GOL TREND-GOLF-BORA-POLO-FOX-SURAN-AUDI3",
    "yearFrom": null,
@@ -1234,7 +1302,7 @@ window.AW.data = {
    "productId": "sabo-2371",
    "make": "chevrolet",
    "models": [
-    "corsa"
+    "Corsa"
    ],
    "groupLabel": "CORSA",
    "yearFrom": null,
@@ -1246,12 +1314,12 @@ window.AW.data = {
    "productId": "sabo-5439",
    "make": "chevrolet",
    "models": [
-    "vectra",
-    "astra",
-    "omega",
-    "zafira",
-    "cruze",
-    "tracker"
+    "Vectra",
+    "Astra",
+    "Omega",
+    "Zafira",
+    "Cruze",
+    "Tracker"
    ],
    "groupLabel": "VECTRA-ASTRA-OMEGA-ZAFIRE-CRUZE-TRACKER",
    "yearFrom": null,
@@ -1263,8 +1331,8 @@ window.AW.data = {
    "productId": "sabo-5547",
    "make": "fiat",
    "models": [
-    "palio",
-    "siena"
+    "Palio",
+    "Siena"
    ],
    "groupLabel": "PALIO-SIENA",
    "yearFrom": null,
@@ -1293,10 +1361,10 @@ window.AW.data = {
    "productId": "sabo-5420",
    "make": "citroen",
    "models": [
-    "berlingo",
-    "xantia",
-    "xsara",
-    "c3"
+    "Berlingo",
+    "Xantia",
+    "Xsara",
+    "C3"
    ],
    "groupLabel": "205-206-207-306-307-405-BERLINGO-XANTIA-XSARA-C3",
    "yearFrom": null,
@@ -1325,10 +1393,10 @@ window.AW.data = {
    "productId": "sabo-4247",
    "make": "citroen",
    "models": [
-    "berlingo",
-    "xantia",
-    "xsara",
-    "c3"
+    "Berlingo",
+    "Xantia",
+    "Xsara",
+    "C3"
    ],
    "groupLabel": "205-206-207-306-307-405-BERLINGO-XANTIA-XSARA-C3",
    "yearFrom": null,
@@ -1340,11 +1408,11 @@ window.AW.data = {
    "productId": "sabo-5780",
    "make": "renault",
    "models": [
-    "clio",
-    "express",
-    "megane",
-    "laguna",
-    "master"
+    "Clio",
+    "Express",
+    "Megane",
+    "Laguna",
+    "Master"
    ],
    "groupLabel": "CLIO-EXPRESS-MEGANE-LAGUNA-MASTER",
    "yearFrom": null,
@@ -1356,8 +1424,8 @@ window.AW.data = {
    "productId": "sabo-5658",
    "make": "renault",
    "models": [
-    "r18",
-    "fuego"
+    "R18",
+    "Fuego"
    ],
    "groupLabel": "R18-FUEGO",
    "yearFrom": null,
@@ -1369,11 +1437,11 @@ window.AW.data = {
    "productId": "sabo-5167",
    "make": "ford",
    "models": [
-    "fiesta",
-    "courier",
-    "ka",
-    "focus",
-    "ecosport"
+    "Fiesta",
+    "Courier",
+    "Ka",
+    "Focus",
+    "EcoSport"
    ],
    "groupLabel": "FIESTA-COURIER-KA-ZETEC-FOCUS-ECOSPORT",
    "yearFrom": null,
@@ -1385,7 +1453,7 @@ window.AW.data = {
    "productId": "dbh-9888",
    "make": "ford",
    "models": [
-    "ranger"
+    "Ranger"
    ],
    "groupLabel": "RANGER",
    "yearFrom": null,
@@ -1397,10 +1465,10 @@ window.AW.data = {
    "productId": "sabo-7375",
    "make": "ford",
    "models": [
-    "f-100",
-    "f-150",
-    "f-1000",
-    "f-4000"
+    "F-100",
+    "F-150",
+    "F-1000",
+    "F-4000"
    ],
    "groupLabel": "F100-F150-F1000-F4000 DIE",
    "yearFrom": null,
@@ -1412,10 +1480,10 @@ window.AW.data = {
    "productId": "sabo-7552",
    "make": "ford",
    "models": [
-    "f-250",
-    "f-2500",
-    "f-350",
-    "f-3500"
+    "F-250",
+    "F-2500",
+    "F-350",
+    "F-3500"
    ],
    "groupLabel": "F250-2500-F350-3500",
    "yearFrom": 1970,
@@ -1427,7 +1495,7 @@ window.AW.data = {
    "productId": "sabo-2153",
    "make": "dodge",
    "models": [
-    "valiant"
+    "Valiant"
    ],
    "groupLabel": "VALIANT",
    "yearFrom": null,
@@ -1439,11 +1507,11 @@ window.AW.data = {
    "productId": "sabo-8383",
    "make": "mercedes-benz",
    "models": [
-    "o400",
-    "o500",
+    "O400",
+    "O500",
     "1218",
-    "axor",
-    "accelo"
+    "Axor",
+    "Accelo"
    ],
    "groupLabel": "O400-O500-1218-AXOR-ACCELO",
    "yearFrom": null,
@@ -1455,8 +1523,8 @@ window.AW.data = {
    "productId": "sabo-5214",
    "make": "mercedes-benz",
    "models": [
-    "l700",
-    "l800",
+    "L700",
+    "L800",
     "900"
    ],
    "groupLabel": "L700-L800-900-OM904/6",
@@ -1469,11 +1537,11 @@ window.AW.data = {
    "productId": "sabo-1924",
    "make": "mercedes-benz",
    "models": [
-    "l1112",
-    "l1114",
-    "o140",
-    "o170",
-    "oc1214"
+    "L1112",
+    "L1114",
+    "O140",
+    "O170",
+    "OC1214"
    ],
    "groupLabel": "L1112-L1114-O140-O170-OC1214",
    "yearFrom": null,
@@ -1485,9 +1553,9 @@ window.AW.data = {
    "productId": "sabo-2235",
    "make": "scania",
    "models": [
-    "l111",
-    "s111",
-    "t111"
+    "L111",
+    "S111",
+    "T111"
    ],
    "groupLabel": "L111-S111-T111",
    "yearFrom": null,
@@ -1499,7 +1567,7 @@ window.AW.data = {
    "productId": "dbh-8099",
    "make": "deutz",
    "models": [
-    "deutz"
+    "Deutz"
    ],
    "groupLabel": "DEUTZ",
    "yearFrom": null,
@@ -1511,8 +1579,8 @@ window.AW.data = {
    "productId": "sabo-2484",
    "make": "ford",
    "models": [
-    "f-14000",
-    "cargo"
+    "F-14000",
+    "Cargo"
    ],
    "groupLabel": "F14000-CARGO",
    "yearFrom": null,
@@ -1524,7 +1592,7 @@ window.AW.data = {
    "productId": "sabo-2005",
    "make": "isuzu",
    "models": [
-    "luv"
+    "LUV"
    ],
    "groupLabel": "LUV",
    "yearFrom": null,
@@ -1536,10 +1604,10 @@ window.AW.data = {
    "productId": "sabo-2927",
    "make": "ford",
    "models": [
-    "f-100",
-    "f-150",
-    "f-1000",
-    "f-4000"
+    "F-100",
+    "F-150",
+    "F-1000",
+    "F-4000"
    ],
    "groupLabel": "F100-F150-F1000-F4000 DIE",
    "yearFrom": null,
@@ -1551,7 +1619,7 @@ window.AW.data = {
    "productId": "sabo-2578",
    "make": "ford",
    "models": [
-    "ranger"
+    "Ranger"
    ],
    "groupLabel": "RANGER",
    "yearFrom": null,
@@ -1563,10 +1631,10 @@ window.AW.data = {
    "productId": "sabo-2103",
    "make": "ford",
    "models": [
-    "f-100",
-    "f-150",
-    "f-1000",
-    "f-4000"
+    "F-100",
+    "F-150",
+    "F-1000",
+    "F-4000"
    ],
    "groupLabel": "F100-F150-F1000-F4000 DIE",
    "yearFrom": null,
@@ -1579,8 +1647,8 @@ window.AW.data = {
    "make": "fiat",
    "models": [
     "673",
-    "150-turbo",
-    "130-au"
+    "150 Turbo",
+    "130 AU"
    ],
    "groupLabel": "673-150 TURBO- 130 AU",
    "yearFrom": null,
@@ -1592,10 +1660,10 @@ window.AW.data = {
    "productId": "sabo-2872",
    "make": "ford",
    "models": [
-    "f-100",
-    "f-150",
-    "f-1000",
-    "f-4000"
+    "F-100",
+    "F-150",
+    "F-1000",
+    "F-4000"
    ],
    "groupLabel": "F100-F150-F1000-F4000 DIE",
    "yearFrom": null,
@@ -1607,7 +1675,7 @@ window.AW.data = {
    "productId": "sabo-19",
    "make": "borgward",
    "models": [
-    "rastrojero"
+    "Rastrojero"
    ],
    "groupLabel": "RASTROJERO",
    "yearFrom": null,
@@ -1619,7 +1687,7 @@ window.AW.data = {
    "productId": "sabo-1942",
    "make": "ford",
    "models": [
-    "escort"
+    "Escort"
    ],
    "groupLabel": "ESCORT",
    "yearFrom": null,
@@ -1631,7 +1699,7 @@ window.AW.data = {
    "productId": "sabo-2991",
    "make": "el-detalle",
    "models": [
-    "oa101"
+    "OA101"
    ],
    "groupLabel": "OA101",
    "yearFrom": null,
@@ -1643,11 +1711,11 @@ window.AW.data = {
    "productId": "sabo-5246",
    "make": "ford",
    "models": [
-    "fiesta",
-    "courier",
-    "ka",
-    "focus",
-    "ecosport"
+    "Fiesta",
+    "Courier",
+    "Ka",
+    "Focus",
+    "EcoSport"
    ],
    "groupLabel": "FIESTA-COURIER-KA-ZETEC-FOCUS-ECOSPORT",
    "yearFrom": null,
@@ -1660,10 +1728,10 @@ window.AW.data = {
    "make": "fiat",
    "models": [
     "147",
-    "spazio",
-    "fiorino",
-    "uno",
-    "duna"
+    "Spazio",
+    "Fiorino",
+    "Uno",
+    "Duna"
    ],
    "groupLabel": "147-SPAZIO-FIORINO-UNO-DUNA",
    "yearFrom": null,
@@ -1675,7 +1743,7 @@ window.AW.data = {
    "productId": "sabo-2961",
    "make": "volkswagen",
    "models": [
-    "camiones-vw"
+    "Camiones VW"
    ],
    "groupLabel": "VW CAMIONES",
    "yearFrom": null,
@@ -1699,7 +1767,7 @@ window.AW.data = {
    "productId": "sabo-2972",
    "make": "ford",
    "models": [
-    "taunus"
+    "Taunus"
    ],
    "groupLabel": "TAUNUS",
    "yearFrom": null,
@@ -1711,8 +1779,8 @@ window.AW.data = {
    "productId": "sabo-9203",
    "make": "fiat",
    "models": [
-    "palio",
-    "siena"
+    "Palio",
+    "Siena"
    ],
    "groupLabel": "PALIO-SIENA",
    "yearFrom": null,
@@ -1724,7 +1792,7 @@ window.AW.data = {
    "productId": "sabo-5683",
    "make": "fiat",
    "models": [
-    "iveco-daily"
+    "Iveco Daily"
    ],
    "groupLabel": "IVECO DAILY",
    "yearFrom": null,
@@ -1736,7 +1804,7 @@ window.AW.data = {
    "productId": "sabo-7781",
    "make": "ford",
    "models": [
-    "ranger"
+    "Ranger"
    ],
    "groupLabel": "RANGER",
    "yearFrom": null,
@@ -1748,11 +1816,11 @@ window.AW.data = {
    "productId": "sabo-5702",
    "make": "ford",
    "models": [
-    "fiesta",
-    "courier",
-    "ka",
-    "focus",
-    "ecosport"
+    "Fiesta",
+    "Courier",
+    "Ka",
+    "Focus",
+    "EcoSport"
    ],
    "groupLabel": "FIESTA-COURIER-KA-ZETEC-FOCUS-ECOSPORT",
    "yearFrom": null,
@@ -1764,7 +1832,7 @@ window.AW.data = {
    "productId": "sabo-5883",
    "make": "chevrolet",
    "models": [
-    "aveo"
+    "Aveo"
    ],
    "groupLabel": "AVEO",
    "yearFrom": null,
@@ -1776,8 +1844,8 @@ window.AW.data = {
    "productId": "sabo-5142",
    "make": "chevrolet",
    "models": [
-    "s10",
-    "blazer"
+    "S10",
+    "Blazer"
    ],
    "groupLabel": "S10-BLAZER",
    "yearFrom": null,
@@ -1789,11 +1857,11 @@ window.AW.data = {
    "productId": "sabo-5254",
    "make": "ford",
    "models": [
-    "fiesta",
-    "courier",
-    "ka",
-    "focus",
-    "ecosport"
+    "Fiesta",
+    "Courier",
+    "Ka",
+    "Focus",
+    "EcoSport"
    ],
    "groupLabel": "FIESTA-COURIER-KA-ZETEC-FOCUS-ECOSPORT",
    "yearFrom": null,
@@ -1821,8 +1889,8 @@ window.AW.data = {
    "productId": "sabo-7630",
    "make": "chevrolet",
    "models": [
-    "s10",
-    "blazer"
+    "S10",
+    "Blazer"
    ],
    "groupLabel": "S10-BLAZER",
    "yearFrom": null,
@@ -1834,9 +1902,9 @@ window.AW.data = {
    "productId": "sabo-5578",
    "make": "scania",
    "models": [
-    "l111",
-    "s111",
-    "t111"
+    "L111",
+    "S111",
+    "T111"
    ],
    "groupLabel": "L111-S111-T111",
    "yearFrom": null,
@@ -1848,7 +1916,7 @@ window.AW.data = {
    "productId": "sabo-8322",
    "make": "ford",
    "models": [
-    "ranger"
+    "Ranger"
    ],
    "groupLabel": "RANGER",
    "yearFrom": null,
@@ -1874,11 +1942,11 @@ window.AW.data = {
    "productId": "dbh-9672",
    "make": "renault",
    "models": [
-    "clio",
-    "express",
-    "megane",
-    "laguna",
-    "master"
+    "Clio",
+    "Express",
+    "Megane",
+    "Laguna",
+    "Master"
    ],
    "groupLabel": "CLIO-EXPRESS-MEGANE-LAGUNA-MASTER",
    "yearFrom": null,
@@ -1890,12 +1958,12 @@ window.AW.data = {
    "productId": "sabo-5919",
    "make": "chevrolet",
    "models": [
-    "vectra",
-    "astra",
-    "omega",
-    "zafira",
-    "cruze",
-    "tracker"
+    "Vectra",
+    "Astra",
+    "Omega",
+    "Zafira",
+    "Cruze",
+    "Tracker"
    ],
    "groupLabel": "VECTRA-ASTRA-OMEGA-ZAFIRE-CRUZE-TRACKER",
    "yearFrom": null,
@@ -1921,7 +1989,7 @@ window.AW.data = {
    "models": [
     "1500",
     "1600",
-    "multicarga"
+    "Multicarga"
    ],
    "groupLabel": "1500-1600",
    "yearFrom": null,
@@ -1945,11 +2013,11 @@ window.AW.data = {
    "productId": "dbh-9656",
    "make": "renault",
    "models": [
-    "clio",
-    "express",
-    "megane",
-    "laguna",
-    "master"
+    "Clio",
+    "Express",
+    "Megane",
+    "Laguna",
+    "Master"
    ],
    "groupLabel": "CLIO-EXPRESS-MEGANE-LAGUNA-MASTER",
    "yearFrom": null,
@@ -1961,7 +2029,7 @@ window.AW.data = {
    "productId": "sabo-8471",
    "make": "volkswagen",
    "models": [
-    "camiones-vw"
+    "Camiones VW"
    ],
    "groupLabel": "VW CAMIONES",
    "yearFrom": null,
@@ -1974,7 +2042,7 @@ window.AW.data = {
    "make": "chevrolet",
    "models": [
     "400",
-    "chevy"
+    "Chevy"
    ],
    "groupLabel": "CHEV 400- CHEVY",
    "yearFrom": null,
@@ -1986,7 +2054,7 @@ window.AW.data = {
    "productId": "sabo-5815",
    "make": "mercedes-benz",
    "models": [
-    "sprinter"
+    "Sprinter"
    ],
    "groupLabel": "SPRINTER",
    "yearFrom": null,
@@ -1999,8 +2067,8 @@ window.AW.data = {
    "make": "fiat",
    "models": [
     "673",
-    "150-turbo",
-    "130-au"
+    "150 Turbo",
+    "130 AU"
    ],
    "groupLabel": "673-150 TURBO- 130 AU",
    "yearFrom": null,
@@ -2012,10 +2080,10 @@ window.AW.data = {
    "productId": "sabo-1880",
    "make": "ford",
    "models": [
-    "f-100",
-    "f-150",
-    "f-1000",
-    "f-4000"
+    "F-100",
+    "F-150",
+    "F-1000",
+    "F-4000"
    ],
    "groupLabel": "F100-F150-F1000-F4000 DIE",
    "yearFrom": null,
@@ -2027,9 +2095,9 @@ window.AW.data = {
    "productId": "sabo-3750",
    "make": "scania",
    "models": [
-    "l111",
-    "s111",
-    "t111"
+    "L111",
+    "S111",
+    "T111"
    ],
    "groupLabel": "L111-S111-T111",
    "yearFrom": null,
@@ -2041,8 +2109,8 @@ window.AW.data = {
    "productId": "dbh-5624",
    "make": "renault",
    "models": [
-    "rambler",
-    "torino"
+    "Rambler",
+    "Torino"
    ],
    "groupLabel": "RAMBLER-TORINO",
    "yearFrom": null,
@@ -2050,608 +2118,5 @@ window.AW.data = {
    "engine": null,
    "position": "Sector"
   }
- ],
- "makes": [
-  {
-   "key": "volkswagen",
-   "label": "Volkswagen"
-  },
-  {
-   "key": "audi",
-   "label": "Audi"
-  },
-  {
-   "key": "chevrolet",
-   "label": "Chevrolet"
-  },
-  {
-   "key": "fiat",
-   "label": "Fiat"
-  },
-  {
-   "key": "peugeot",
-   "label": "Peugeot"
-  },
-  {
-   "key": "citroen",
-   "label": "Citroën"
-  },
-  {
-   "key": "renault",
-   "label": "Renault"
-  },
-  {
-   "key": "ford",
-   "label": "Ford"
-  },
-  {
-   "key": "dodge",
-   "label": "Dodge"
-  },
-  {
-   "key": "mercedes-benz",
-   "label": "Mercedes-Benz"
-  },
-  {
-   "key": "scania",
-   "label": "Scania"
-  },
-  {
-   "key": "deutz",
-   "label": "Deutz"
-  },
-  {
-   "key": "isuzu",
-   "label": "Isuzu"
-  },
-  {
-   "key": "borgward",
-   "label": "Borgward"
-  },
-  {
-   "key": "el-detalle",
-   "label": "El Detalle"
-  },
-  {
-   "key": "siam-di-tella",
-   "label": "Siam Di Tella"
-  }
- ],
- "models": [
-  {
-   "make": "audi",
-   "key": "a3",
-   "label": "A3"
-  },
-  {
-   "make": "borgward",
-   "key": "rastrojero",
-   "label": "Rastrojero"
-  },
-  {
-   "make": "chevrolet",
-   "key": "400",
-   "label": "400"
-  },
-  {
-   "make": "chevrolet",
-   "key": "astra",
-   "label": "Astra"
-  },
-  {
-   "make": "chevrolet",
-   "key": "aveo",
-   "label": "Aveo"
-  },
-  {
-   "make": "chevrolet",
-   "key": "blazer",
-   "label": "Blazer"
-  },
-  {
-   "make": "chevrolet",
-   "key": "chevy",
-   "label": "Chevy"
-  },
-  {
-   "make": "chevrolet",
-   "key": "corsa",
-   "label": "Corsa"
-  },
-  {
-   "make": "chevrolet",
-   "key": "cruze",
-   "label": "Cruze"
-  },
-  {
-   "make": "chevrolet",
-   "key": "omega",
-   "label": "Omega"
-  },
-  {
-   "make": "chevrolet",
-   "key": "s10",
-   "label": "S10"
-  },
-  {
-   "make": "chevrolet",
-   "key": "tracker",
-   "label": "Tracker"
-  },
-  {
-   "make": "chevrolet",
-   "key": "vectra",
-   "label": "Vectra"
-  },
-  {
-   "make": "chevrolet",
-   "key": "zafira",
-   "label": "Zafira"
-  },
-  {
-   "make": "citroen",
-   "key": "berlingo",
-   "label": "Berlingo"
-  },
-  {
-   "make": "citroen",
-   "key": "c3",
-   "label": "C3"
-  },
-  {
-   "make": "citroen",
-   "key": "xantia",
-   "label": "Xantia"
-  },
-  {
-   "make": "citroen",
-   "key": "xsara",
-   "label": "Xsara"
-  },
-  {
-   "make": "deutz",
-   "key": "deutz",
-   "label": "Deutz"
-  },
-  {
-   "make": "dodge",
-   "key": "valiant",
-   "label": "Valiant"
-  },
-  {
-   "make": "el-detalle",
-   "key": "oa101",
-   "label": "OA101"
-  },
-  {
-   "make": "fiat",
-   "key": "130-au",
-   "label": "130 AU"
-  },
-  {
-   "make": "fiat",
-   "key": "147",
-   "label": "147"
-  },
-  {
-   "make": "fiat",
-   "key": "150-turbo",
-   "label": "150 Turbo"
-  },
-  {
-   "make": "fiat",
-   "key": "1500",
-   "label": "1500"
-  },
-  {
-   "make": "fiat",
-   "key": "1600",
-   "label": "1600"
-  },
-  {
-   "make": "fiat",
-   "key": "600",
-   "label": "600"
-  },
-  {
-   "make": "fiat",
-   "key": "673",
-   "label": "673"
-  },
-  {
-   "make": "fiat",
-   "key": "750",
-   "label": "750"
-  },
-  {
-   "make": "fiat",
-   "key": "800",
-   "label": "800"
-  },
-  {
-   "make": "fiat",
-   "key": "duna",
-   "label": "Duna"
-  },
-  {
-   "make": "fiat",
-   "key": "fiorino",
-   "label": "Fiorino"
-  },
-  {
-   "make": "fiat",
-   "key": "iveco-daily",
-   "label": "Iveco Daily"
-  },
-  {
-   "make": "fiat",
-   "key": "multicarga",
-   "label": "Multicarga"
-  },
-  {
-   "make": "fiat",
-   "key": "palio",
-   "label": "Palio"
-  },
-  {
-   "make": "fiat",
-   "key": "siena",
-   "label": "Siena"
-  },
-  {
-   "make": "fiat",
-   "key": "spazio",
-   "label": "Spazio"
-  },
-  {
-   "make": "fiat",
-   "key": "uno",
-   "label": "Uno"
-  },
-  {
-   "make": "ford",
-   "key": "cargo",
-   "label": "Cargo"
-  },
-  {
-   "make": "ford",
-   "key": "courier",
-   "label": "Courier"
-  },
-  {
-   "make": "ford",
-   "key": "ecosport",
-   "label": "EcoSport"
-  },
-  {
-   "make": "ford",
-   "key": "escort",
-   "label": "Escort"
-  },
-  {
-   "make": "ford",
-   "key": "f-100",
-   "label": "F-100"
-  },
-  {
-   "make": "ford",
-   "key": "f-1000",
-   "label": "F-1000"
-  },
-  {
-   "make": "ford",
-   "key": "f-14000",
-   "label": "F-14000"
-  },
-  {
-   "make": "ford",
-   "key": "f-150",
-   "label": "F-150"
-  },
-  {
-   "make": "ford",
-   "key": "f-250",
-   "label": "F-250"
-  },
-  {
-   "make": "ford",
-   "key": "f-2500",
-   "label": "F-2500"
-  },
-  {
-   "make": "ford",
-   "key": "f-350",
-   "label": "F-350"
-  },
-  {
-   "make": "ford",
-   "key": "f-3500",
-   "label": "F-3500"
-  },
-  {
-   "make": "ford",
-   "key": "f-4000",
-   "label": "F-4000"
-  },
-  {
-   "make": "ford",
-   "key": "fiesta",
-   "label": "Fiesta"
-  },
-  {
-   "make": "ford",
-   "key": "focus",
-   "label": "Focus"
-  },
-  {
-   "make": "ford",
-   "key": "ka",
-   "label": "Ka"
-  },
-  {
-   "make": "ford",
-   "key": "ranger",
-   "label": "Ranger"
-  },
-  {
-   "make": "ford",
-   "key": "taunus",
-   "label": "Taunus"
-  },
-  {
-   "make": "isuzu",
-   "key": "luv",
-   "label": "LUV"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "1218",
-   "label": "1218"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "1633",
-   "label": "1633"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "1634",
-   "label": "1634"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "1924",
-   "label": "1924"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "1938",
-   "label": "1938"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "1941",
-   "label": "1941"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "900",
-   "label": "900"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "accelo",
-   "label": "Accelo"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "axor",
-   "label": "Axor"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "l1112",
-   "label": "L1112"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "l1114",
-   "label": "L1114"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "l700",
-   "label": "L700"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "l800",
-   "label": "L800"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "o140",
-   "label": "O140"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "o170",
-   "label": "O170"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "o400",
-   "label": "O400"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "o500",
-   "label": "O500"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "oc1214",
-   "label": "OC1214"
-  },
-  {
-   "make": "mercedes-benz",
-   "key": "sprinter",
-   "label": "Sprinter"
-  },
-  {
-   "make": "peugeot",
-   "key": "205",
-   "label": "205"
-  },
-  {
-   "make": "peugeot",
-   "key": "206",
-   "label": "206"
-  },
-  {
-   "make": "peugeot",
-   "key": "207",
-   "label": "207"
-  },
-  {
-   "make": "peugeot",
-   "key": "306",
-   "label": "306"
-  },
-  {
-   "make": "peugeot",
-   "key": "307",
-   "label": "307"
-  },
-  {
-   "make": "peugeot",
-   "key": "405",
-   "label": "405"
-  },
-  {
-   "make": "peugeot",
-   "key": "505",
-   "label": "505"
-  },
-  {
-   "make": "renault",
-   "key": "clio",
-   "label": "Clio"
-  },
-  {
-   "make": "renault",
-   "key": "express",
-   "label": "Express"
-  },
-  {
-   "make": "renault",
-   "key": "fuego",
-   "label": "Fuego"
-  },
-  {
-   "make": "renault",
-   "key": "laguna",
-   "label": "Laguna"
-  },
-  {
-   "make": "renault",
-   "key": "master",
-   "label": "Master"
-  },
-  {
-   "make": "renault",
-   "key": "megane",
-   "label": "Megane"
-  },
-  {
-   "make": "renault",
-   "key": "r18",
-   "label": "R18"
-  },
-  {
-   "make": "renault",
-   "key": "rambler",
-   "label": "Rambler"
-  },
-  {
-   "make": "renault",
-   "key": "torino",
-   "label": "Torino"
-  },
-  {
-   "make": "scania",
-   "key": "l111",
-   "label": "L111"
-  },
-  {
-   "make": "scania",
-   "key": "s111",
-   "label": "S111"
-  },
-  {
-   "make": "scania",
-   "key": "t111",
-   "label": "T111"
-  },
-  {
-   "make": "siam-di-tella",
-   "key": "1500",
-   "label": "1500"
-  },
-  {
-   "make": "volkswagen",
-   "key": "bora",
-   "label": "Bora"
-  },
-  {
-   "make": "volkswagen",
-   "key": "camiones-vw",
-   "label": "Camiones VW"
-  },
-  {
-   "make": "volkswagen",
-   "key": "fox",
-   "label": "Fox"
-  },
-  {
-   "make": "volkswagen",
-   "key": "gacel",
-   "label": "Gacel"
-  },
-  {
-   "make": "volkswagen",
-   "key": "gol",
-   "label": "Gol"
-  },
-  {
-   "make": "volkswagen",
-   "key": "gol-trend",
-   "label": "Gol Trend"
-  },
-  {
-   "make": "volkswagen",
-   "key": "golf",
-   "label": "Golf"
-  },
-  {
-   "make": "volkswagen",
-   "key": "polo",
-   "label": "Polo"
-  },
-  {
-   "make": "volkswagen",
-   "key": "saveiro",
-   "label": "Saveiro"
-  },
-  {
-   "make": "volkswagen",
-   "key": "senda",
-   "label": "Senda"
-  },
-  {
-   "make": "volkswagen",
-   "key": "suran",
-   "label": "Suran"
-  }
  ]
-};
+}

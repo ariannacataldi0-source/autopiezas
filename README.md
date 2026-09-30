@@ -10,12 +10,13 @@ HTML + CSS + JavaScript, sin build ni dependencias. Funciona en GitHub Pages abr
 index.html          Página única (las secciones se navegan con #/ruta)
 css/styles.css      Estilos (colores de marca en variables al principio)
 js/config.js        Datos de la empresa, número de WhatsApp, zonas y aplicaciones
-js/data.js          Productos y compatibilidades (generado desde data/retenes-v1.draft.json)
+js/data.js          Productos y compatibilidades (GENERADO desde data/retenes.json)
 js/search.js        Búsqueda por vehículo, código y medida (sin DOM)
 js/cart.js          Carrito (localStorage) y armado del mensaje de WhatsApp
 js/app.js           Interfaz y navegación
 assets/             Logo (negro y blanco) y favicon
-data/               Datos fuente de los 20 retenes (con link a la ficha original)
+data/retenes.json   Fuente de datos: 60 retenes y sus compatibilidades (con link a la ficha original)
+tools/build-data.py Regenera js/data.js a partir de data/retenes.json
 docs/               Análisis y propuesta (fases 1 a 5)
 tests/              Tests de lógica (node) y de navegador (Playwright)
 ```
@@ -28,6 +29,13 @@ tests/              Tests de lógica (node) y de navegador (Playwright)
 - **Azul exacto de la marca** → variable `--brand` en `css/styles.css`.
 - **Precios y stock** → validar contra el sistema; hoy son de referencia.
 - **Fotos** → sin fotos verificadas; se muestra un dibujo generado con las medidas reales.
+
+## Cómo agregar o editar retenes
+
+1. Editar `data/retenes.json` (un producto en `products` y una o más entradas en `fitments`).
+2. Ejecutar `python3 tools/build-data.py` (valida los datos y regenera `js/data.js`).
+3. Si un dato no está confirmado, dejarlo en `null`: el sitio muestra "No disponible" o
+   "Precio a consultar" en lugar de inventarlo.
 
 ## Tests
 
