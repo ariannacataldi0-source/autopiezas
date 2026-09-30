@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retenes | Autopiezas Warnes</title>
+  <meta name="description" content="Encontrá el retén que necesitás: buscá por tu vehículo o por código, marca o medida. Autopiezas Warnes, desde 1965 en Av. Warnes.">
+  <meta name="theme-color" content="#0b4ea2">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#/">
+        <img src="assets/logo-negro.png" alt="Autopiezas Warnes — inicio" width="900" height="139">
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#/" data-nav="inicio">Inicio</a></li>
+          <li><a href="#/retenes" data-nav="retenes">Retenes</a></li>
+          <li><a href="#/vehiculo" data-nav="vehiculo">Buscar por vehículo</a></li>
+          <li><a href="#/buscar" data-nav="buscar">Buscar por código/medida</a></li>
+          <li><a href="#/como-encontrar" data-nav="como-encontrar">Cómo encontrar mi retén</a></li>
+          <li><a href="#/ayuda" data-nav="ayuda">Ayuda</a></li>
+          <li><a href="#/contacto" data-nav="contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-btn" href="#/carrito" data-cart-label aria-label="Carrito">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>
+          <span class="cart-text">Carrito</span>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+        <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Menú</span>
+        </button>
+      </div>
+    </div>
+    <div id="vehicle-chip" class="vehicle-chip" hidden></div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <noscript><div class="container page"><h1>Encontrá el retén que necesitás</h1><p>Para usar el buscador necesitás tener JavaScript activado. También podés consultarnos al (011) 3989-6816 o a autopiezas@autopiezaswarnes.com.ar.</p></div></noscript>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand"><img src="assets/logo-blanco.png" alt="Autopiezas Warnes" width="900" height="139"></p>
+        <p>Desde 1965 en Av. Warnes. Distribuimos a todo el país.</p>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <div id="footer-contact"></div>
+        <div id="footer-wa"></div>
+      </div>
+      <div>
+        <h2>Retenes</h2>
+        <ul class="footer-links">
+          <li><a href="#/vehiculo">Buscar por vehículo</a></li>
+          <li><a href="#/buscar">Buscar por código o medida</a></li>
+          <li><a href="#/como-encontrar">Cómo encontrar mi retén</a></li>
+          <li><a href="#/ayuda">Ayuda</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="container legal">© <span id="year"></span> Autopiezas Warnes. Precios de referencia; el precio final se confirma por WhatsApp.</p>
+  </footer>
+
+  <nav class="bottom-bar" aria-label="Accesos rápidos">
+    <a href="#/vehiculo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14M6.5 17v2M17.5 17v2M4 13l1.6-4.8A2 2 0 0 1 7.5 7h9a2 2 0 0 1 1.9 1.2L20 13v4H4z"/></svg>Vehículo</a>
+    <a href="#/buscar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>Código</a>
+    <a href="#/carrito" data-cart-label><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>Carrito<span class="cart-count" data-cart-count hidden>0</span></a>
+    <a id="bottom-wa" class="bottom-wa" href="#" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.8z"/></svg>WhatsApp</a>
+  </nav>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
